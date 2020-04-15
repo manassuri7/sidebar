@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.root {
+  display: 'flex',
+}
+/* sidebar */
+.sidebar {
+  width: 240px;
+  height: 300vh;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-image: url('./side.jpg');
+  cursor: pointer;
+}
+
+
+.sidebar-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-item-content {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar-item-icon {
+  margin-right: 6px;
+}
+
+.sidebar-item-text {
+  width: 100%;
+  color: azure;
+  font-size: 16px;
+  white-space: pre-line;
+}
+
+
+.sidebar-item-expand-arrow {
+  font-size: 1.2rem !important;
+  color:azure;
+}
+
+.sidebar-item-expand-arrow-expanded {
+  color:rgb(238, 22, 22);
+  font-weight: bold;
+}
+
+.menuButton{
+  margin-right: 16px;
+}
+
+.drawer{
+  width: 240px;
+  flex-shrink: 0;
+}
+.drawerHeader{
+  display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: flex-end;
+}
+.toolbar{
+  background-color: white;
+}
+.drawer-header{
+  color: azure;
+
+}
+
+.logo-show{
+  display: inline;
+}
+.logo-hide{
+  display: none;
+}
+
+/* shifting the content on open and closing the drawer */
+.shiftTextLeft {
+  padding-left: 0px;
+}
+.shiftTextRight {
+  padding-left: 240px;
+
+}
